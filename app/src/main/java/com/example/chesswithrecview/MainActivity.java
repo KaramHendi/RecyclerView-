@@ -77,8 +77,7 @@ public class MainActivity extends AppCompatActivity implements StoneAdapter.Item
     @Override
     public void onItemClicked(int index) {
         Intent intent = new Intent(MainActivity.this,DetailsActivity.class);
-        intent.putExtra("image", stones.get(index).getImg());
-        intent.putExtra("name", stones.get(index).getName());
+        intent.putExtra("ItemId",index);
         startActivity(intent);
     }
 
